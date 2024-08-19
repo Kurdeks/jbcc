@@ -10,25 +10,34 @@ on:
 jobs:
   unit_tests:
     runs-on: ubuntu-latest
+    env:
+      VCPKG_ROOT: ${{ github.workspace }}/vcpkg
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up CMake
         uses: lukka/get-cmake@latest
 
-      - name: Set up dependencies
-        run: sudo apt-get install -y cmake build-essential
+      - name: Restore from cache and install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: 73964f854d0d6424f335e9515b61b3a2dad5e15b
+          vcpkgJsonGlob: '**/vcpkg.json'
 
       - name: Create build directory
         run: mkdir build
 
-      - name: Run CMake
-        run: cmake -S . -B build
+      - name: Run CMake consuming CMakePreset.json and run vcpkg to build packages
+        uses: lukka/run-cmake@v10
+        with:
+          configurePreset: 'linux-x64'
 
       - name: Build
-        run: cmake --build build
+        # Build your program with the given configuration
+        run: cmake --build ${{github.workspace}}/build
 
-      - name: Run CTest
-        run: ctest --output-on-failure --test-dir build
+      - name: Test
+        working-directory: ${{github.workspace}}/build
+        run: ctest --output-on-failure
