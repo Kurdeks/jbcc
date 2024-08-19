@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # add compile flags to give more compile time warnings (pedantic may be dropped later)
 add_compile_options(-Wall -Wextra -Wpedantic)
 
+find_package(GTest CONFIG REQUIRED)
+
 # using compiler cache to speed up build
 set(USE_CCACHE YES)
 

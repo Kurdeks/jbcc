@@ -1,3 +1,6 @@
 add_executable(tester tester.cpp)
 
-add_test(Tester tester)
+target_link_libraries(tester PRIVATE GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(tester)

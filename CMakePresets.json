@@ -1,0 +1,44 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": {
+                    "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                    "type": "FILEPATH"
+                }
+            },
+            "binaryDir": "${sourceDir}/build"
+        },
+        {
+            "name": "macos-arm",
+            "inherits": "base",
+            "description": "Preset for ARM macOS",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "Darwin",
+                "VCPKG_TARGET_TRIPLET": "arm64-osx"
+            }
+        },
+        {
+            "name": "linux-x64",
+            "inherits": "base",
+            "description": "Preset for x64 Linux",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "Linux",
+                "VCPKG_TARGET_TRIPLET": "x64-linux"
+            }
+        },
+        {
+            "name": "macos-arm-debug",
+            "inherits": "macos-arm",
+            "description": "Debug preset for ARM macOS",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}
