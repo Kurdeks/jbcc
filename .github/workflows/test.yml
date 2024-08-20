@@ -26,9 +26,6 @@ jobs:
           vcpkgGitCommitId: 73964f854d0d6424f335e9515b61b3a2dad5e15b
           vcpkgJsonGlob: '**/vcpkg.json'
 
-      - name: Create build directory
-        run: mkdir build
-
       - name: Run CMake consuming CMakePreset.json and run vcpkg to build packages
         uses: lukka/run-cmake@v10
         with:
