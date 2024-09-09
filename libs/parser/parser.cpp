@@ -67,14 +67,14 @@
 
 
 /* First part of user prologue.  */
-#line 1 "/home/borys/Dev/jbcc/src/parser.y"
+#line 1 "/home/borys/Dev/jbcc/libs/parser/parser.y"
 
 	#include<stdio.h>
 	int yylex(void);
 	int yyerror(const char *s);
 	int success = 1;
 
-#line 78 "/home/borys/Dev/jbcc/src/parser.cpp"
+#line 78 "/home/borys/Dev/jbcc/libs/parser/parser.cpp"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -1890,7 +1890,7 @@ yyreduce:
   switch (yyn)
     {
 
-#line 1894 "/home/borys/Dev/jbcc/src/parser.cpp"
+#line 1894 "/home/borys/Dev/jbcc/libs/parser/parser.cpp"
 
       default: break;
     }
@@ -2114,7 +2114,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 276 "/home/borys/Dev/jbcc/src/parser.y"
+#line 276 "/home/borys/Dev/jbcc/libs/parser/parser.y"
 
 
 

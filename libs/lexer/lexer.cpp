@@ -1,6 +1,6 @@
-#line 2 "/home/borys/Dev/jbcc/src/lexer.cpp"
+#line 2 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 
-#line 4 "/home/borys/Dev/jbcc/src/lexer.cpp"
+#line 4 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -635,13 +635,13 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/borys/Dev/jbcc/src/lexer.l"
-#line 4 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 1 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
+#line 4 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 	#include<stdio.h>
 	#include"parser.hpp"
 	#include<math.h>
-#line 644 "/home/borys/Dev/jbcc/src/lexer.cpp"
-#line 645 "/home/borys/Dev/jbcc/src/lexer.cpp"
+#line 644 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
+#line 645 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 
 #define INITIAL 0
 
@@ -858,9 +858,9 @@ YY_DECL
 		}
 
 	{
-#line 8 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 8 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 
-#line 864 "/home/borys/Dev/jbcc/src/lexer.cpp"
+#line 864 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -930,204 +930,204 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 9 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 9 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return HEADER;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 10 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return DEFINE;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 11 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 11 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return storage_const;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 12 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 12 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return type_const;}	
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 13 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 13 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return qual_const;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 14 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 14 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return enum_const;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 15 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 15 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return CASE;}	
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 16 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 16 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return DEFAULT;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 17 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 17 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return IF;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 18 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 18 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return SWITCH;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 19 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 19 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return ELSE;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 20 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 20 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return FOR;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 21 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 21 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return DO;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 22 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 22 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return WHILE;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 23 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 23 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return GOTO;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 24 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 24 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return CONTINUE;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 25 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 25 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return BREAK;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 26 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 26 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return struct_const;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 27 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 27 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return RETURN;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 28 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 28 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return SIZEOF;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 29 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 29 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return or_const;}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 30 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 30 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return and_const;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 31 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 31 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return param_const;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 32 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 32 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return eq_const;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 33 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 33 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return rel_const;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 34 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 34 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return shift_const;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 35 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 35 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return inc_const;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 36 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 36 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return point_const;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 37 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 37 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return yytext[0];}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 38 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 38 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return PUNC;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 39 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 39 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return int_const;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 40 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 40 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return float_const;}	
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 41 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 41 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return char_const;}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 42 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 42 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return id;}
 	YY_BREAK
 case 35:
 /* rule 35 can match eol */
 YY_RULE_SETUP
-#line 43 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 43 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 {return string;}
 	YY_BREAK
 case 36:
 /* rule 36 can match eol */
 YY_RULE_SETUP
-#line 44 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 44 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 ;
 	YY_BREAK
 case 37:
 /* rule 37 can match eol */
 YY_RULE_SETUP
-#line 45 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 45 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 ;
 	YY_BREAK
 case 38:
 /* rule 38 can match eol */
 YY_RULE_SETUP
-#line 46 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 46 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 ;
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 47 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 47 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 ECHO;
 	YY_BREAK
-#line 1131 "/home/borys/Dev/jbcc/src/lexer.cpp"
+#line 1131 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2144,7 +2144,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 47 "/home/borys/Dev/jbcc/src/lexer.l"
+#line 47 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 
 
 int yywrap(void)

@@ -5,6 +5,6 @@
 int main() {
 
   if (yyparse())
-    printf("Parsing Successful\n");
-  return 0;
+    std::cout << "SUCCESS\n";
+  return EXIT_SUCCESS;
 }
