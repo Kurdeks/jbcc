@@ -2,7 +2,7 @@
 
 %{
 	#include<stdio.h>
-	#include"parser.hpp"
+	#include"../parser/parser.hpp"
 	#include<math.h>
 %}
 %%

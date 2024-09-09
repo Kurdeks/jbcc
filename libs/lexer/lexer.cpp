@@ -638,7 +638,7 @@ char *yytext;
 #line 1 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 #line 4 "/home/borys/Dev/jbcc/libs/lexer/lexer.l"
 	#include<stdio.h>
-	#include"parser.hpp"
+	#include"../parser/parser.hpp"
 	#include<math.h>
 #line 644 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
 #line 645 "/home/borys/Dev/jbcc/libs/lexer/lexer.cpp"
