@@ -1,7 +1,10 @@
+#include "../libs/parser/parser.hpp"
 #include <cstdlib>
 #include <iostream>
 
 int main() {
-  std::cout << "Hello World\n";
+
+  if (yyparse())
+    std::cout << "SUCCESS\n";
   return EXIT_SUCCESS;
 }
