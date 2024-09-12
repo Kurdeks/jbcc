@@ -10,7 +10,7 @@ add_compile_options(-Wall -Wextra -Wpedantic)
 find_package(GTest CONFIG REQUIRED)
 
 # using compiler cache to speed up build
-#set(USE_CCACHE YES)
+set(USE_CCACHE YES)
 
 enable_testing()
 
