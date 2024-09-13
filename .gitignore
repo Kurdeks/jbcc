@@ -1,3 +1,5 @@
 build/
 .cache/
 input/
+vcpkg/
+vcpkg_installed/
