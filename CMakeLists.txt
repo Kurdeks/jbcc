@@ -1,6 +1,3 @@
-set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")
-
-
 cmake_minimum_required(VERSION 3.21)
 project(jbcc)
 
